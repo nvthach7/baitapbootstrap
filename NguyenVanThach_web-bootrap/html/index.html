@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                var i=1;
+                i++;
+                $( "#btbdangnhap").click(function(){
+                  $("#myModal").modal();
+                })
+            })
+           
+
+
+        
+
+    </script>
+    <style>
+        li{
+            width: 120px;
+        }
+        table{
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        .abcc {
+            text-align: center;
+            background-color: green;
+        }
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="../img/banner.png" alt="" srcset="">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <ul class="navbar-nav navbar-expand-md navbar-collapse">
+                <li class="nav-item"><a href="#" class="nav-link">DANG NHAP</a></li>
+                <li class="nav-item"  id="btbdangnhap"><a href="#" class="nav-link " >MO TOUR MOI</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+            <h3>DANH SACH TOUR-DU LICH VIET</h3>
+       <div class="table table-bordered table-hover table-responsive ">
+        <table>
+            <thead> 
+              <tr>
+                <th>STT</th>
+                <th>Ma Tour</th>
+                <th>Hanh trinh</th>
+                <th>Ngay khoi hanh</th>
+                <th>thoi giann</th>
+                <th>Gia tour</th>
+                <th>Anh dai dien</th>
+              </tr>
+            </thead>
+           </table>
+       </div>
+        </div>
+       
+        </div>
+        <div class="row">
+            <div class="modal fade" role="dialog" id="myModal"> 
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Thong Tin Tour</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times; </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                
+                                <table>
+                                    <tr> Ma tour
+                                        <input type="text" placeholder="HNI-HCM-12-2018">
+                                    </tr> <br>
+                                    <tr> Hanh trinh
+                                        <input type="text" placeholder="Nhap hanh trinh">
+                                    </tr> <br>
+                                    <tr> Ngay Khoi Hanh
+                                        <input type="time" value="">
+                                    </tr> <br>
+                                    <tr> thoi gian
+                                        <input type="text" value="" placeholder="(4 ngay 3 dem)">
+                                    </tr> <br>
+                                    <tr> gia tour
+                                        <input type="number" value="" placeholder="(>0)">
+                                    </tr> <br>
+                                    <tr> anh dai dien
+                                        <input type="file" >
+                                    </tr> <br>
+                                    <input class="abcc" type="submit" value="Luu">
+                                    
+
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
